@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ground Floor - Restoration Project</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Restoration Project</h1>
+            <nav>
+                <a href="../../index.html">Home</a>
+                <a href="../../accounting.html">Accounting</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="area-header">
+            <h2>Ground Floor</h2>
+            <a href="../../index.html" class="back-link">← Back to All Areas</a>
+        </section>
+
+        <section class="area-description">
+            <h3>Restoration Description</h3>
+            <p>
+                Enter the description of restoration work done in the ground floor area here.
+            </p>
+        </section>
+
+        <section class="before-section">
+            <h3>Before Restoration</h3>
+            <div class="image-gallery" id="beforeGallery">
+                <!-- Before images will be loaded from groundfloor/before/ folder -->
+            </div>
+        </section>
+
+        <section class="after-section">
+            <h3>After Restoration</h3>
+            <div class="image-gallery" id="afterGallery">
+                <!-- After images will be loaded from groundfloor/workdone/ folder -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Restoration Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="../../data/images-data.js"></script>
+    <script src="../../js/area-detail.js"></script>
+    <script>
+        // Load images for groundfloor area
+        const areaName = 'groundfloor';
+        loadAreaImages(areaName);
+    </script>
+</body>
+</html>
+
